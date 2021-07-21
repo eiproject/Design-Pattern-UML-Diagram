@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IiZoMOOFEeu_QdxqyjJirg" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KugTYOOFEeu_QdxqyjJirg" name="ICar" visibility="public">
+    <ownedOperation xmi:id="_iMSMcOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_iXR7gOOFEeu_QdxqyjJirg" name="GetSpeed"/>
+    <ownedOperation xmi:id="_idClQOOFEeu_QdxqyjJirg" name="GetName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MFCogOOFEeu_QdxqyjJirg" name="AmericanCar" visibility="public">
+    <interfaceRealization xmi:id="_XyaOkOOFEeu_QdxqyjJirg" client="_MFCogOOFEeu_QdxqyjJirg" supplier="_KugTYOOFEeu_QdxqyjJirg" contract="_KugTYOOFEeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_lX_TcOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_lX_TceOFEeu_QdxqyjJirg" name="GetName"/>
+    <ownedOperation xmi:id="_lX_TcuOFEeu_QdxqyjJirg" name="GetSpeed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Nku5oOOFEeu_QdxqyjJirg" name="IndonesianCar" visibility="public">
+    <interfaceRealization xmi:id="_YOAlcOOFEeu_QdxqyjJirg" client="_Nku5oOOFEeu_QdxqyjJirg" supplier="_KugTYOOFEeu_QdxqyjJirg" contract="_KugTYOOFEeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_leBqAOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_leBqAeOFEeu_QdxqyjJirg" name="GetName"/>
+    <ownedOperation xmi:id="_leBqAuOFEeu_QdxqyjJirg" name="GetSpeed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QAWAcOOFEeu_QdxqyjJirg" name="CarAdapter" visibility="public">
+    <interfaceRealization xmi:id="_YhQ4oOOFEeu_QdxqyjJirg" client="_QAWAcOOFEeu_QdxqyjJirg" supplier="_KugTYOOFEeu_QdxqyjJirg" contract="_KugTYOOFEeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_lj1-IOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_lj1-IeOFEeu_QdxqyjJirg" name="GetName"/>
+    <ownedOperation xmi:id="_lj1-IuOFEeu_QdxqyjJirg" name="GetSpeed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RRiikOOFEeu_QdxqyjJirg" name="MphSpeedDifference" visibility="public">
+    <ownedOperation xmi:id="_nJVVQOOFEeu_QdxqyjJirg" name="GetDifference"/>
+    <ownedOperation xmi:id="_nSppUOOFEeu_QdxqyjJirg" name="CheckDifference"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_cLIiUOOFEeu_QdxqyjJirg" client="_MFCogOOFEeu_QdxqyjJirg" supplier="_RRiikOOFEeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_dVXg0OOFEeu_QdxqyjJirg" client="_Nku5oOOFEeu_QdxqyjJirg" supplier="_QAWAcOOFEeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_eUSAIOOFEeu_QdxqyjJirg" client="_QAWAcOOFEeu_QdxqyjJirg" supplier="_RRiikOOFEeu_QdxqyjJirg"/>
+</uml:Model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item value="PNG" key="ExportRepresentationsAsImagesDialog.imageFormat"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="C:\Lab Formulatrix\BlazorUserAuth"/>
+			<item value="C:\Lab Formulatrix\AdapterFacadePattern\FacadePattern"/>
+			<item value="C:\Lab Formulatrix\AdapterFacadePattern\AdapterPattern"/>
+			<item value="C:\Lab Formulatrix\CommandPattern\MCDOrder"/>
+			<item value="C:\Lab Formulatrix\Factory Pattern"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vLwXgNfoEeulh5gk7RSGIQ" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_4xh-8NfoEeulh5gk7RSGIQ" name="Models">
+    <packagedElement xmi:type="uml:Class" xmi:id="_6znLcNfoEeulh5gk7RSGIQ" name="Computer" visibility="public">
+      <ownedOperation xmi:id="_NqzecNfqEeulh5gk7RSGIQ" name="Display"/>
+      <ownedOperation xmi:id="_aENrINfqEeulh5gk7RSGIQ" name="View" isAbstract="true"/>
+      <ownedOperation xmi:id="_aR7-ENfqEeulh5gk7RSGIQ" name="Specification" isAbstract="true"/>
+      <ownedOperation xmi:id="_fBI4INfqEeulh5gk7RSGIQ" name="checkCursor"/>
+      <ownedOperation xmi:id="_fL7L0NfqEeulh5gk7RSGIQ" name="checkPower"/>
+      <ownedOperation xmi:id="_fTLqYNfqEeulh5gk7RSGIQ" name="checkTyping"/>
+      <ownedOperation xmi:id="_fcEgoNfqEeulh5gk7RSGIQ" name="setCursor"/>
+      <ownedOperation xmi:id="_fg9nsNfqEeulh5gk7RSGIQ" name="setPower"/>
+      <ownedOperation xmi:id="_flvaANfqEeulh5gk7RSGIQ" name="setTyping"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-42igNfoEeulh5gk7RSGIQ" name="All In One" visibility="public">
+      <generalization xmi:id="_smLKcNfqEeulh5gk7RSGIQ" general="_6znLcNfoEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_8yYIwNfpEeulh5gk7RSGIQ" name="View"/>
+      <ownedOperation xmi:id="_9A1bgNfpEeulh5gk7RSGIQ" name="Specification"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__PW-ANfoEeulh5gk7RSGIQ" name="Laptop" visibility="public">
+      <generalization xmi:id="_tPGLoNfqEeulh5gk7RSGIQ" general="_6znLcNfoEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_DOLHgNfqEeulh5gk7RSGIQ" name="View"/>
+      <ownedOperation xmi:id="_DOLHgdfqEeulh5gk7RSGIQ" name="Specification"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="__mPXgNfpEeulh5gk7RSGIQ" name="Using Battery" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__wFsgNfoEeulh5gk7RSGIQ" name="Notebook" visibility="public">
+      <generalization xmi:id="_tuqcgNfqEeulh5gk7RSGIQ" general="_6znLcNfoEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_DXO84NfqEeulh5gk7RSGIQ" name="View"/>
+      <ownedOperation xmi:id="_DXO84dfqEeulh5gk7RSGIQ" name="Specification"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AGcXANfpEeulh5gk7RSGIQ" name="Personal Computer" visibility="public">
+      <generalization xmi:id="_uPq30NfqEeulh5gk7RSGIQ" general="_6znLcNfoEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_Dcc0ENfqEeulh5gk7RSGIQ" name="View"/>
+      <ownedOperation xmi:id="_Dcc0EdfqEeulh5gk7RSGIQ" name="Specification"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Ad84ENfpEeulh5gk7RSGIQ" name="Computer" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AllKENfpEeulh5gk7RSGIQ" name="Tablet" visibility="public">
+      <generalization xmi:id="_uxcIINfqEeulh5gk7RSGIQ" general="_6znLcNfoEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_DhynENfqEeulh5gk7RSGIQ" name="View"/>
+      <ownedOperation xmi:id="_DhzOINfqEeulh5gk7RSGIQ" name="Specification"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_DC9ygNfpEeulh5gk7RSGIQ" name="Interface Cursor Behavior">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_N2YRwNfpEeulh5gk7RSGIQ" name="Cursor Behavior" visibility="public">
+      <ownedOperation xmi:id="_HjNOENfqEeulh5gk7RSGIQ" name="Cursor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_P11BANfpEeulh5gk7RSGIQ" name="Not Using Mouse" visibility="public">
+      <generalization xmi:id="_yBs_ANfqEeulh5gk7RSGIQ" general="_N2YRwNfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_FzHJcNfqEeulh5gk7RSGIQ" name="Cursor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SeDAcNfpEeulh5gk7RSGIQ" name="Using Mouse" visibility="public">
+      <generalization xmi:id="_ycwjUNfqEeulh5gk7RSGIQ" general="_N2YRwNfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_G-McgNfqEeulh5gk7RSGIQ" name="Cursor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TFqaENfpEeulh5gk7RSGIQ" name="Using Touchpad" visibility="public">
+      <generalization xmi:id="_y6rOYNfqEeulh5gk7RSGIQ" general="_N2YRwNfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_HDE8gNfqEeulh5gk7RSGIQ" name="Cursor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UtvLINfpEeulh5gk7RSGIQ" name="Using Touch Screen" visibility="public">
+      <generalization xmi:id="_zld30NfqEeulh5gk7RSGIQ" general="_N2YRwNfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_HJZm8NfqEeulh5gk7RSGIQ" name="Cursor"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GSzyoNfpEeulh5gk7RSGIQ" name="Interface Power Behavior">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bGhSINfpEeulh5gk7RSGIQ" name="Power Behavior" visibility="public">
+      <ownedOperation xmi:id="_KwC9gNfqEeulh5gk7RSGIQ" name="Battery"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fl_HENfpEeulh5gk7RSGIQ" name="Not Using Battery" visibility="public">
+      <generalization xmi:id="_v4_mENfqEeulh5gk7RSGIQ" general="_bGhSINfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_JrABANfqEeulh5gk7RSGIQ" name="Battery"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hMJMkNfpEeulh5gk7RSGIQ" name="Using Battery" visibility="public">
+      <generalization xmi:id="_wUYhkNfqEeulh5gk7RSGIQ" general="_bGhSINfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_Kq70ANfqEeulh5gk7RSGIQ" name="Battery"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_G3MSENfpEeulh5gk7RSGIQ" name="Interface Typing Behavior">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_cyN-8NfpEeulh5gk7RSGIQ" name="Typing Behavior" visibility="public">
+      <ownedOperation xmi:id="_McyMINfqEeulh5gk7RSGIQ" name="Typing"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nPPXcNfpEeulh5gk7RSGIQ" name="Using Built In Keyboard" visibility="public">
+      <generalization xmi:id="_wtV0INfqEeulh5gk7RSGIQ" general="_cyN-8NfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_LLDegNfqEeulh5gk7RSGIQ" name="Typing"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n6DPANfpEeulh5gk7RSGIQ" name="Using External Keyboard" visibility="public">
+      <generalization xmi:id="_xDPysNfqEeulh5gk7RSGIQ" general="_cyN-8NfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_MStDENfqEeulh5gk7RSGIQ" name="Typing"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oUlO4NfpEeulh5gk7RSGIQ" name="Using Touch Keyboard" visibility="public">
+      <generalization xmi:id="_xh1zMNfqEeulh5gk7RSGIQ" general="_cyN-8NfpEeulh5gk7RSGIQ"/>
+      <ownedOperation xmi:id="_MXmKINfqEeulh5gk7RSGIQ" name="Typing"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

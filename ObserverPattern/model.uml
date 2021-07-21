@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__mHkANifEeutuqHemW199w" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_GpEpYNigEeutuqHemW199w" name="Sensor Device" visibility="public">
+    <ownedAttribute xmi:id="_8nUqENi_EeutuqHemW199w" name="depthSensor"/>
+    <ownedAttribute xmi:id="_5lOyENi_EeutuqHemW199w" name="salinitySensor"/>
+    <ownedAttribute xmi:id="_83InsNi_EeutuqHemW199w" name="tempSensor"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_P2LSINigEeutuqHemW199w" name="Observer Interface" visibility="public">
+    <ownedOperation xmi:id="__h-6wNl3Eeuu5Y51KXeXTw" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_TMiJ8NigEeutuqHemW199w" name="Observer 2" visibility="public">
+    <ownedAttribute xmi:id="_utOZkNl2Eeuu5Y51KXeXTw" name="username"/>
+    <ownedAttribute xmi:id="_utOZkdl2Eeuu5Y51KXeXTw" name="id"/>
+    <ownedAttribute xmi:id="_utOZktl2Eeuu5Y51KXeXTw" name="function"/>
+    <ownedAttribute xmi:id="_0YWwYNl2Eeuu5Y51KXeXTw" name="SeaTemperature"/>
+    <ownedAttribute xmi:id="_0YWwYdl2Eeuu5Y51KXeXTw" name="SeaDepth"/>
+    <ownedAttribute xmi:id="_0YWwYtl2Eeuu5Y51KXeXTw" name="SeaSalinity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_V7eccNigEeutuqHemW199w" name="Observer 1" visibility="public">
+    <ownedAttribute xmi:id="_ui8cMNl2Eeuu5Y51KXeXTw" name="username"/>
+    <ownedAttribute xmi:id="_ui8cMdl2Eeuu5Y51KXeXTw" name="id"/>
+    <ownedAttribute xmi:id="_ui8cMtl2Eeuu5Y51KXeXTw" name="function"/>
+    <ownedAttribute xmi:id="_1h_R8Nl2Eeuu5Y51KXeXTw" name="SeaTemperature"/>
+    <ownedAttribute xmi:id="_1h_R8dl2Eeuu5Y51KXeXTw" name="SeaDepth"/>
+    <ownedAttribute xmi:id="_1h_R8tl2Eeuu5Y51KXeXTw" name="SeaSalinity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_WF3HgNigEeutuqHemW199w" name="Observer 3" visibility="public">
+    <ownedAttribute xmi:id="_qecsANl2Eeuu5Y51KXeXTw" name="id"/>
+    <ownedAttribute xmi:id="_qzaPYNl2Eeuu5Y51KXeXTw" name="username"/>
+    <ownedAttribute xmi:id="_q61tENl2Eeuu5Y51KXeXTw" name="function"/>
+    <ownedAttribute xmi:id="_2lum4Nl2Eeuu5Y51KXeXTw" name="SeaTemperature"/>
+    <ownedAttribute xmi:id="_2lum4dl2Eeuu5Y51KXeXTw" name="SeaDepth"/>
+    <ownedAttribute xmi:id="_2lum4tl2Eeuu5Y51KXeXTw" name="SeaSalinity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_eIVwMNigEeutuqHemW199w" client="_P2LSINigEeutuqHemW199w" supplier="_TMiJ8NigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_eyxNQNigEeutuqHemW199w" client="_P2LSINigEeutuqHemW199w" supplier="_V7eccNigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_fbahoNigEeutuqHemW199w" client="_P2LSINigEeutuqHemW199w" supplier="_WF3HgNigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Gm7e4NihEeutuqHemW199w" client="_GpEpYNigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_HwmcsNihEeutuqHemW199w" supplier="_P2LSINigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EDsVANjAEeutuqHemW199w" name="Sea Level Data" visibility="public">
+    <ownedAttribute xmi:id="_EDsVAdjAEeutuqHemW199w" name="SeaDepth"/>
+    <ownedAttribute xmi:id="_EDsVAtjAEeutuqHemW199w" name="SeaSalinity"/>
+    <ownedAttribute xmi:id="_EDsVA9jAEeutuqHemW199w" name="SeaTemperature"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QG3zANjAEeutuqHemW199w" supplier="_EDsVANjAEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DqO2sNjBEeutuqHemW199w" client="_EDsVANjAEeutuqHemW199w" supplier="_P2LSINigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_KWhbMNlTEeuu5Y51KXeXTw" name="Update" client="_P2LSINigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_V--sENlTEeuu5Y51KXeXTw" client="_P2LSINigEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_6Q3b4Nl2Eeuu5Y51KXeXTw" name="Observer 4" visibility="public">
+    <ownedAttribute xmi:id="_6Q3b4dl2Eeuu5Y51KXeXTw" name="id"/>
+    <ownedAttribute xmi:id="_6Q3b4tl2Eeuu5Y51KXeXTw" name="username"/>
+    <ownedAttribute xmi:id="_6Q3b49l2Eeuu5Y51KXeXTw" name="function"/>
+    <ownedAttribute xmi:id="_6Q3b5Nl2Eeuu5Y51KXeXTw" name="SeaTemperature"/>
+    <ownedAttribute xmi:id="_6Q3b5dl2Eeuu5Y51KXeXTw" name="SeaDepth"/>
+    <ownedAttribute xmi:id="_6Q3b5tl2Eeuu5Y51KXeXTw" name="SeaSalinity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_dajicNl3Eeuu5Y51KXeXTw" client="_GpEpYNigEeutuqHemW199w" supplier="_EDsVANjAEeutuqHemW199w"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_tK2LYNl3Eeuu5Y51KXeXTw" name="Subject Interface" visibility="public">
+    <ownedOperation xmi:id="_0GegkNlSEeuu5Y51KXeXTw" name="AddObserver"/>
+    <ownedOperation xmi:id="_0dR3ANlSEeuu5Y51KXeXTw" name="DeleteObserver"/>
+    <ownedOperation xmi:id="_hHEfINo1EeuLmePHwqAI2g" name="previewData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5Uy_wNl3Eeuu5Y51KXeXTw" name="Observer" visibility="public">
+    <ownedAttribute xmi:id="_PQieIdlTEeuu5Y51KXeXTw" name="AllObservers"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_COY2oNl4Eeuu5Y51KXeXTw" client="_tK2LYNl3Eeuu5Y51KXeXTw" supplier="_5Uy_wNl3Eeuu5Y51KXeXTw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_EpVPENl4Eeuu5Y51KXeXTw" client="_5Uy_wNl3Eeuu5Y51KXeXTw" supplier="_P2LSINigEeutuqHemW199w"/>
+</uml:Model>

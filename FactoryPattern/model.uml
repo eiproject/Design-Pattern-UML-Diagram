@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oiW2cN-PEeuH-eBVVvkJjQ" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_rCDMAN-PEeuH-eBVVvkJjQ" name="ICoffee" visibility="public">
+    <ownedOperation xmi:id="_XUOroN-REeuH-eBVVvkJjQ" name="Prepare" isAbstract="true"/>
+    <ownedOperation xmi:id="_XjZJAN-REeuH-eBVVvkJjQ" name="MixWithBoiledWater" isAbstract="true"/>
+    <ownedOperation xmi:id="_X2RBsN-REeuH-eBVVvkJjQ" name="Stir" isAbstract="true"/>
+    <ownedOperation xmi:id="_YInV8N-REeuH-eBVVvkJjQ" name="Plating" isAbstract="true"/>
+    <ownedOperation xmi:id="_dTdDIN-REeuH-eBVVvkJjQ" name="GetName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_sbMJMN-PEeuH-eBVVvkJjQ" name="ICoffeeStore" visibility="public">
+    <ownedOperation xmi:id="_2BLhIN-REeuH-eBVVvkJjQ" name="CreateCoffee" isAbstract="true"/>
+    <ownedOperation xmi:id="_2N5ugN-REeuH-eBVVvkJjQ" name="OrderCoffee"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_veXmUN-PEeuH-eBVVvkJjQ" name="Coffee" visibility="public">
+    <ownedOperation xmi:id="_h9oTQd-REeuH-eBVVvkJjQ" name="Plating"/>
+    <ownedOperation xmi:id="_h9o6UN-REeuH-eBVVvkJjQ" name="MixWithBoiledWater"/>
+    <ownedOperation xmi:id="_h9o6Ud-REeuH-eBVVvkJjQ" name="Prepare"/>
+    <ownedOperation xmi:id="_h9o6Ut-REeuH-eBVVvkJjQ" name="Stir"/>
+    <ownedOperation xmi:id="_h9oTQN-REeuH-eBVVvkJjQ" name="GetName"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_w3ptcN-PEeuH-eBVVvkJjQ" name="IPizza" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xGwgcN-PEeuH-eBVVvkJjQ" name="CoffeeStore" visibility="public">
+    <ownedOperation xmi:id="_58XkUN-REeuH-eBVVvkJjQ" name="CreateCoffee" isAbstract="true"/>
+    <ownedOperation xmi:id="_58XkUd-REeuH-eBVVvkJjQ" name="OrderCoffee"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5BOcoN-PEeuH-eBVVvkJjQ" name="BandungStore" visibility="public">
+    <ownedOperation xmi:id="_LLbRUN-SEeuH-eBVVvkJjQ" name="CreateCoffee"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_64gHUN-PEeuH-eBVVvkJjQ" name="SemarangStore" visibility="public">
+    <ownedOperation xmi:id="_MV45UN-SEeuH-eBVVvkJjQ" name="CreateCoffee"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BDxWwN-QEeuH-eBVVvkJjQ" name="BandungStyleDarkRoastCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_DvyREN-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EIcosN-QEeuH-eBVVvkJjQ" name="BandungStyleDecafCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_EIcosd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_GdEWsN-QEeuH-eBVVvkJjQ" name="BandungStyleDarkRoastCoffee" visibility="public">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_GdEWsd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G-fBsN-QEeuH-eBVVvkJjQ" name="BandungStyleEspressoCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_G-fBsd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_J6-oAN-QEeuH-eBVVvkJjQ" name="BandungStyleDecaftCoffee" visibility="public">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_J6-oAd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KIHsIN-QEeuH-eBVVvkJjQ" name="BandungStyleHouseBlendCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_KIHsId-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Phrx0N-QEeuH-eBVVvkJjQ" name="SemarangStyleEspressoCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Phrx0d-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Phrx0t-QEeuH-eBVVvkJjQ" name="BandungStyleDecaftCoffee" visibility="public">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Phrx09-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PhtnAN-QEeuH-eBVVvkJjQ" name="SemarangStyleDecafCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_PhtnAd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_PhtnAt-QEeuH-eBVVvkJjQ" name="BandungStyleDarkRoastCoffee" visibility="public">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_PhtnA9-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PhvcMN-QEeuH-eBVVvkJjQ" name="SemarangStyleDarkRoastCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_PhvcMd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PhwqUN-QEeuH-eBVVvkJjQ" name="SemarangStyleHouseBlendCoffee" visibility="public">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_PhwqUd-QEeuH-eBVVvkJjQ" name="BandungStore" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_CJMRQN-REeuH-eBVVvkJjQ" client="_xGwgcN-PEeuH-eBVVvkJjQ" supplier="_sbMJMN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Cez78N-REeuH-eBVVvkJjQ" client="_5BOcoN-PEeuH-eBVVvkJjQ" supplier="_xGwgcN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_CyyA0N-REeuH-eBVVvkJjQ" client="_64gHUN-PEeuH-eBVVvkJjQ" supplier="_xGwgcN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DOcpIN-REeuH-eBVVvkJjQ" client="_veXmUN-PEeuH-eBVVvkJjQ" supplier="_rCDMAN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DjvjsN-REeuH-eBVVvkJjQ" client="_Phrx0N-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_D0NooN-REeuH-eBVVvkJjQ" client="_PhtnAN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_EG3e4N-REeuH-eBVVvkJjQ" client="_PhvcMN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_EaxSUN-REeuH-eBVVvkJjQ" client="_PhwqUN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_EuqesN-REeuH-eBVVvkJjQ" client="_KIHsIN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_FAU2cN-REeuH-eBVVvkJjQ" client="_G-fBsN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_FUAncN-REeuH-eBVVvkJjQ" client="_EIcosN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Fm2D4N-REeuH-eBVVvkJjQ" client="_BDxWwN-QEeuH-eBVVvkJjQ" supplier="_veXmUN-PEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YWYA8N-YEeuH-eBVVvkJjQ" name="ICoffeeIngredientFactory" visibility="public">
+    <ownedOperation xmi:id="_YWYA8d-YEeuH-eBVVvkJjQ" name="CreateMilk"/>
+    <ownedOperation xmi:id="_YWYA8t-YEeuH-eBVVvkJjQ" name="CreateMocha"/>
+    <ownedOperation xmi:id="_f_aO4N-YEeuH-eBVVvkJjQ" name="CreateRoast"/>
+    <ownedOperation xmi:id="_gMtrEN-YEeuH-eBVVvkJjQ" name="CreateSoy"/>
+    <ownedOperation xmi:id="_gWXWUN-YEeuH-eBVVvkJjQ" name="CreateWhip"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mFSA8N-YEeuH-eBVVvkJjQ" name="CoffeeIngredientFactory" visibility="public">
+    <ownedOperation xmi:id="_pBIuEN-YEeuH-eBVVvkJjQ" name="CreateMilk"/>
+    <ownedOperation xmi:id="_pBIuEd-YEeuH-eBVVvkJjQ" name="CreateWhip"/>
+    <ownedOperation xmi:id="_pBIuEt-YEeuH-eBVVvkJjQ" name="CreateRoast"/>
+    <ownedOperation xmi:id="_pBIuE9-YEeuH-eBVVvkJjQ" name="CreateSoy"/>
+    <ownedOperation xmi:id="_pBIuFN-YEeuH-eBVVvkJjQ" name="CreateMocha"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_q5O4IN-YEeuH-eBVVvkJjQ" client="_mFSA8N-YEeuH-eBVVvkJjQ" supplier="_YWYA8N-YEeuH-eBVVvkJjQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6m_9wOg5Eeu0bbUuDw_BUQ" client="_rCDMAN-PEeuH-eBVVvkJjQ" supplier="_YWYA8N-YEeuH-eBVVvkJjQ"/>
+</uml:Model>

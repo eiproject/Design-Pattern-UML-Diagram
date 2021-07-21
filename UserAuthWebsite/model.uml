@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DL0lcOPPEeuGquLaaBEw0w" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_H7TzYOPPEeuGquLaaBEw0w" name="IDatabase" visibility="public">
+    <ownedOperation xmi:id="_XAMH0OPPEeuGquLaaBEw0w" name="AddUserToDatabase"/>
+    <ownedOperation xmi:id="_XQM5wOPPEeuGquLaaBEw0w" name="GetAllUser"/>
+    <ownedOperation xmi:id="_XfhvMOPPEeuGquLaaBEw0w" name="IsUserAlreadyRegistered"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JiksIOPPEeuGquLaaBEw0w" name="UserDatabase" visibility="public">
+    <interfaceRealization xmi:id="_xSEgMOPPEeuGquLaaBEw0w" client="_JiksIOPPEeuGquLaaBEw0w" supplier="_H7TzYOPPEeuGquLaaBEw0w" contract="_H7TzYOPPEeuGquLaaBEw0w"/>
+    <ownedOperation xmi:id="_gtHgIOPPEeuGquLaaBEw0w" name="GetInstance"/>
+    <ownedOperation xmi:id="_d1ZFEOPPEeuGquLaaBEw0w" name="AddUserToDatabase"/>
+    <ownedOperation xmi:id="_d1ZFEePPEeuGquLaaBEw0w" name="GetAllUser"/>
+    <ownedOperation xmi:id="_d1ZFEuPPEeuGquLaaBEw0w" name="IsUserAlreadyRegistered"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_LKoPEOPPEeuGquLaaBEw0w" name="IUser" visibility="public">
+    <ownedOperation xmi:id="_k_LLMOPPEeuGquLaaBEw0w" name="SetUser"/>
+    <ownedOperation xmi:id="_lHA4kOPPEeuGquLaaBEw0w" name="GetEmail"/>
+    <ownedOperation xmi:id="_lMvGEOPPEeuGquLaaBEw0w" name="GetPassword"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_MM6ygOPPEeuGquLaaBEw0w" name="IUserLogic" visibility="public">
+    <ownedOperation xmi:id="_piZewOPPEeuGquLaaBEw0w" name="CreateUser"/>
+    <ownedOperation xmi:id="_ppp9UOPPEeuGquLaaBEw0w" name="ReadUser"/>
+    <ownedOperation xmi:id="_puYFQOPPEeuGquLaaBEw0w" name="UpdateUser"/>
+    <ownedOperation xmi:id="_pzPXIOPPEeuGquLaaBEw0w" name="DeleteUser"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OUgxIOPPEeuGquLaaBEw0w" name="User" visibility="public">
+    <interfaceRealization xmi:id="_xjSzEOPPEeuGquLaaBEw0w" client="_OUgxIOPPEeuGquLaaBEw0w" supplier="_LKoPEOPPEeuGquLaaBEw0w" contract="_LKoPEOPPEeuGquLaaBEw0w"/>
+    <ownedOperation xmi:id="_uRLiEOPPEeuGquLaaBEw0w" name="SetUser"/>
+    <ownedOperation xmi:id="_uRLiEePPEeuGquLaaBEw0w" name="GetEmail"/>
+    <ownedOperation xmi:id="_uRLiEuPPEeuGquLaaBEw0w" name="GetPassword"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O8hMUOPPEeuGquLaaBEw0w" name="UserLogic" visibility="public">
+    <interfaceRealization xmi:id="_yE2oAOPPEeuGquLaaBEw0w" client="_O8hMUOPPEeuGquLaaBEw0w" supplier="_MM6ygOPPEeuGquLaaBEw0w" contract="_MM6ygOPPEeuGquLaaBEw0w"/>
+    <ownedOperation xmi:id="_t31N8OPPEeuGquLaaBEw0w" name="CreateUser"/>
+    <ownedOperation xmi:id="_t311AOPPEeuGquLaaBEw0w" name="DeleteUser"/>
+    <ownedOperation xmi:id="_t311AePPEeuGquLaaBEw0w" name="UpdateUser"/>
+    <ownedOperation xmi:id="_t311AuPPEeuGquLaaBEw0w" name="ReadUser"/>
+  </packagedElement>
+</uml:Model>

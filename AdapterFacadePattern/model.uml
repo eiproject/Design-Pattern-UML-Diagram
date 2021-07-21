@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_IiZoMOOFEeu_QdxqyjJirg" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KugTYOOFEeu_QdxqyjJirg" name="ICar" visibility="public">
+    <ownedOperation xmi:id="_iMSMcOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_iXR7gOOFEeu_QdxqyjJirg" name="GetSpeed"/>
+    <ownedOperation xmi:id="_idClQOOFEeu_QdxqyjJirg" name="GetName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MFCogOOFEeu_QdxqyjJirg" name="AmericanCar" visibility="public">
+    <interfaceRealization xmi:id="_XyaOkOOFEeu_QdxqyjJirg" client="_MFCogOOFEeu_QdxqyjJirg" supplier="_KugTYOOFEeu_QdxqyjJirg" contract="_KugTYOOFEeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_lX_TcOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_lX_TceOFEeu_QdxqyjJirg" name="GetName"/>
+    <ownedOperation xmi:id="_lX_TcuOFEeu_QdxqyjJirg" name="GetSpeed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Nku5oOOFEeu_QdxqyjJirg" name="IndonesianCar" visibility="public">
+    <interfaceRealization xmi:id="_YOAlcOOFEeu_QdxqyjJirg" client="_Nku5oOOFEeu_QdxqyjJirg" supplier="_KugTYOOFEeu_QdxqyjJirg" contract="_KugTYOOFEeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_leBqAOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_leBqAeOFEeu_QdxqyjJirg" name="GetName"/>
+    <ownedOperation xmi:id="_leBqAuOFEeu_QdxqyjJirg" name="GetSpeed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QAWAcOOFEeu_QdxqyjJirg" name="CarAdapter" visibility="public">
+    <interfaceRealization xmi:id="_YhQ4oOOFEeu_QdxqyjJirg" client="_QAWAcOOFEeu_QdxqyjJirg" supplier="_KugTYOOFEeu_QdxqyjJirg" contract="_KugTYOOFEeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_lj1-IOOFEeu_QdxqyjJirg" name="CheckSpeed"/>
+    <ownedOperation xmi:id="_lj1-IeOFEeu_QdxqyjJirg" name="GetName"/>
+    <ownedOperation xmi:id="_lj1-IuOFEeu_QdxqyjJirg" name="GetSpeed"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RRiikOOFEeu_QdxqyjJirg" name="MphSpeedDifference" visibility="public">
+    <ownedOperation xmi:id="_nJVVQOOFEeu_QdxqyjJirg" name="GetDifference"/>
+    <ownedOperation xmi:id="_nSppUOOFEeu_QdxqyjJirg" name="CheckDifference"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_cLIiUOOFEeu_QdxqyjJirg" client="_MFCogOOFEeu_QdxqyjJirg" supplier="_RRiikOOFEeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_dVXg0OOFEeu_QdxqyjJirg" client="_Nku5oOOFEeu_QdxqyjJirg" supplier="_QAWAcOOFEeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_eUSAIOOFEeu_QdxqyjJirg" client="_QAWAcOOFEeu_QdxqyjJirg" supplier="_RRiikOOFEeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_w3EnEOOfEeuwH-gASsks8g" name="IFoodMenu" visibility="public">
+    <ownedOperation xmi:id="_3rycIOOfEeuwH-gASsks8g" name="Prepare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_y5RIUOOfEeuwH-gASsks8g" name="FoodForBreakfast" visibility="public">
+    <interfaceRealization xmi:id="_dAEyAOOgEeuwH-gASsks8g" client="_y5RIUOOfEeuwH-gASsks8g" supplier="_w3EnEOOfEeuwH-gASsks8g" contract="_w3EnEOOfEeuwH-gASsks8g"/>
+    <ownedOperation xmi:id="_k_uJIOOgEeuwH-gASsks8g" name="Prepare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0F7IsOOfEeuwH-gASsks8g" name="FoodForLunch" visibility="public">
+    <interfaceRealization xmi:id="_dMT3MOOgEeuwH-gASsks8g" client="_0F7IsOOfEeuwH-gASsks8g" supplier="_w3EnEOOfEeuwH-gASsks8g" contract="_w3EnEOOfEeuwH-gASsks8g"/>
+    <ownedOperation xmi:id="_lHCSEOOgEeuwH-gASsks8g" name="Prepare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0NctAOOfEeuwH-gASsks8g" name="FoodForDinner" visibility="public">
+    <interfaceRealization xmi:id="_dZohgOOgEeuwH-gASsks8g" client="_0NctAOOfEeuwH-gASsks8g" supplier="_w3EnEOOfEeuwH-gASsks8g" contract="_w3EnEOOfEeuwH-gASsks8g"/>
+    <ownedOperation xmi:id="_lMI0gOOgEeuwH-gASsks8g" name="Prepare"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5qBqcOOfEeuwH-gASsks8g" name="Bread" visibility="public">
+    <ownedOperation xmi:id="_ohK2oOOgEeuwH-gASsks8g" name="TakeBread"/>
+    <ownedOperation xmi:id="_JFrG0OOlEeuwH-gASsks8g" name="PutJam"/>
+    <ownedOperation xmi:id="_JIiNkOOlEeuwH-gASsks8g" name="Roast"/>
+    <ownedOperation xmi:id="_JLQKYOOlEeuwH-gASsks8g" name="PlaceOnPlate"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7BZGAOOfEeuwH-gASsks8g" name="Coffee" visibility="public">
+    <ownedOperation xmi:id="_nb-JIOOgEeuwH-gASsks8g" name="TakeCoffee"/>
+    <ownedOperation xmi:id="_RA54AOOlEeuwH-gASsks8g" name="TakeSugar"/>
+    <ownedOperation xmi:id="_RIo3sOOlEeuwH-gASsks8g" name="PourtheWater"/>
+    <ownedOperation xmi:id="_ROKQ4OOlEeuwH-gASsks8g" name="Stir"/>
+    <ownedOperation xmi:id="_RTD_AOOlEeuwH-gASsks8g" name="PlaceOnTable"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7HpfAOOfEeuwH-gASsks8g" name="Milk" visibility="public">
+    <ownedOperation xmi:id="_ompMgOOgEeuwH-gASsks8g" name="TakeMilk"/>
+    <ownedOperation xmi:id="_ZRX5YOOlEeuwH-gASsks8g" name="TakeMug"/>
+    <ownedOperation xmi:id="_ZXo5cOOlEeuwH-gASsks8g" name="PourToGlass"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7MKyoOOfEeuwH-gASsks8g" name="Rice" visibility="public">
+    <ownedOperation xmi:id="_orFnoOOgEeuwH-gASsks8g" name="TakeRice"/>
+    <ownedOperation xmi:id="_m1GkIOOlEeuwH-gASsks8g" name="Wash"/>
+    <ownedOperation xmi:id="_m5NoEOOlEeuwH-gASsks8g" name="Cook"/>
+    <ownedOperation xmi:id="_m_Sa4OOlEeuwH-gASsks8g" name="Done"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7Qt7cOOfEeuwH-gASsks8g" name="Soup" visibility="public">
+    <ownedOperation xmi:id="_ovSyMOOgEeuwH-gASsks8g" name="TakeVegetable"/>
+    <ownedOperation xmi:id="_r9mvAOOlEeuwH-gASsks8g" name="Wash"/>
+    <ownedOperation xmi:id="_sA-zIOOlEeuwH-gASsks8g" name="Boil"/>
+    <ownedOperation xmi:id="_sEezEOOlEeuwH-gASsks8g" name="AddFlavor"/>
+    <ownedOperation xmi:id="_sHqC4OOlEeuwH-gASsks8g" name="PourToBoil"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_7a81gOOfEeuwH-gASsks8g" name="Omelete" visibility="public">
+    <ownedOperation xmi:id="_ozUWkOOgEeuwH-gASsks8g" name="TakeEgg"/>
+    <ownedOperation xmi:id="_gWDdEOOlEeuwH-gASsks8g" name="Fry"/>
+    <ownedOperation xmi:id="_ga79EOOlEeuwH-gASsks8g" name="AddSalt"/>
+    <ownedOperation xmi:id="_gfMyAOOlEeuwH-gASsks8g" name="PlaceOnPlate"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_3G8a8OOlEeuwH-gASsks8g" client="_5qBqcOOfEeuwH-gASsks8g" supplier="_y5RIUOOfEeuwH-gASsks8g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_4KxPcOOlEeuwH-gASsks8g" client="_7HpfAOOfEeuwH-gASsks8g" supplier="_y5RIUOOfEeuwH-gASsks8g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_69kHMOOlEeuwH-gASsks8g" client="_7MKyoOOfEeuwH-gASsks8g" supplier="_0F7IsOOfEeuwH-gASsks8g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_7XHPoOOlEeuwH-gASsks8g" client="_7a81gOOfEeuwH-gASsks8g" supplier="_0F7IsOOfEeuwH-gASsks8g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_83_MgOOlEeuwH-gASsks8g" client="_7BZGAOOfEeuwH-gASsks8g" supplier="_0NctAOOfEeuwH-gASsks8g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_9UQRwOOlEeuwH-gASsks8g" client="_7MKyoOOfEeuwH-gASsks8g" supplier="_0NctAOOfEeuwH-gASsks8g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_9rvksOOlEeuwH-gASsks8g" client="_7Qt7cOOfEeuwH-gASsks8g" supplier="_0NctAOOfEeuwH-gASsks8g"/>
+</uml:Model>

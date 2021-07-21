@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Cf2U4OgwEeu0bbUuDw_BUQ" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_GVyEoOgwEeu0bbUuDw_BUQ" name="IStore" visibility="public">
+    <ownedOperation xmi:id="_zjVc0OgwEeu0bbUuDw_BUQ" name="MaxDiscount"/>
+    <ownedOperation xmi:id="_zqJPcOgwEeu0bbUuDw_BUQ" name="MaxAmountThatGetDiscount "/>
+    <ownedOperation xmi:id="_zuRhgOgwEeu0bbUuDw_BUQ" name="GetStoreName"/>
+    <ownedOperation xmi:id="_zxsB4OgwEeu0bbUuDw_BUQ" name="GetLastId"/>
+    <ownedOperation xmi:id="_z0jIoOgwEeu0bbUuDw_BUQ" name="GetListOfStoreStock"/>
+    <ownedOperation xmi:id="_z-MM0OgwEeu0bbUuDw_BUQ" name="AddStock"/>
+    <ownedOperation xmi:id="_0CGccOgwEeu0bbUuDw_BUQ" name="RemoveStock"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_HVRywOgwEeu0bbUuDw_BUQ" name="IStock" visibility="public">
+    <ownedOperation xmi:id="_HjqXkOgxEeu0bbUuDw_BUQ" name="UpdateStockInformation"/>
+    <ownedOperation xmi:id="_Hq9SYOgxEeu0bbUuDw_BUQ" name="UpdateStockAmount"/>
+    <ownedOperation xmi:id="_HxmF4OgxEeu0bbUuDw_BUQ" name="Discount"/>
+    <ownedOperation xmi:id="_H32e4OgxEeu0bbUuDw_BUQ" name="Price"/>
+    <ownedOperation xmi:id="_H-He8OgxEeu0bbUuDw_BUQ" name="ID"/>
+    <ownedOperation xmi:id="_IDvl0OgxEeu0bbUuDw_BUQ" name="Amount"/>
+    <ownedOperation xmi:id="_IInewOgxEeu0bbUuDw_BUQ" name="Type"/>
+    <ownedOperation xmi:id="_IOHp0OgxEeu0bbUuDw_BUQ" name="Title"/>
+    <ownedOperation xmi:id="_ITAw4OgxEeu0bbUuDw_BUQ" name="Category"/>
+    <ownedOperation xmi:id="_S47msOgxEeu0bbUuDw_BUQ" name="SubCategory"/>
+    <ownedOperation xmi:id="_S_PDAOgxEeu0bbUuDw_BUQ" name="Size"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J8GrEOgwEeu0bbUuDw_BUQ" name="Store" visibility="public">
+    <interfaceRealization xmi:id="_aIWTYOg0Eeu0bbUuDw_BUQ" client="_J8GrEOgwEeu0bbUuDw_BUQ" supplier="_GVyEoOgwEeu0bbUuDw_BUQ" contract="_GVyEoOgwEeu0bbUuDw_BUQ"/>
+    <ownedOperation xmi:id="_BwSDsOgxEeu0bbUuDw_BUQ" name="RemoveStock"/>
+    <ownedOperation xmi:id="_BwSDsegxEeu0bbUuDw_BUQ" name="GetListOfStoreStock"/>
+    <ownedOperation xmi:id="_BwSDsugxEeu0bbUuDw_BUQ" name="GetLastId"/>
+    <ownedOperation xmi:id="_BwSDs-gxEeu0bbUuDw_BUQ" name="MaxDiscount"/>
+    <ownedOperation xmi:id="_BwSDtOgxEeu0bbUuDw_BUQ" name="MaxAmountThatGetDiscount "/>
+    <ownedOperation xmi:id="_BwSDtegxEeu0bbUuDw_BUQ" name="AddStock"/>
+    <ownedOperation xmi:id="_BwSDtugxEeu0bbUuDw_BUQ" name="GetStoreName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NWixoOgwEeu0bbUuDw_BUQ" name="Book" visibility="public">
+    <ownedOperation xmi:id="_j0YbMOgxEeu0bbUuDw_BUQ" name="UpdateStockInformation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NeEV8OgwEeu0bbUuDw_BUQ" name="Pen" visibility="public">
+    <ownedOperation xmi:id="_j9iXMOgxEeu0bbUuDw_BUQ" name="UpdateStockInformation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Nku-oOgwEeu0bbUuDw_BUQ" name="Pencil" visibility="public">
+    <ownedOperation xmi:id="_kGYxMOgxEeu0bbUuDw_BUQ" name="UpdateStockInformation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Rv_eIOgwEeu0bbUuDw_BUQ" name="IFactory" visibility="public">
+    <ownedOperation xmi:id="_1vhLEOgxEeu0bbUuDw_BUQ" name="FactoryStoreStock"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RwChcOgwEeu0bbUuDw_BUQ" name="Factory" visibility="public">
+    <interfaceRealization xmi:id="_apSdQOg0Eeu0bbUuDw_BUQ" client="_RwChcOgwEeu0bbUuDw_BUQ" supplier="_Rv_eIOgwEeu0bbUuDw_BUQ" contract="_Rv_eIOgwEeu0bbUuDw_BUQ"/>
+    <ownedOperation xmi:id="_2xFVwOgxEeu0bbUuDw_BUQ" name="FactoryStoreStock"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_RwChcegwEeu0bbUuDw_BUQ" name="Store" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eEumMOgwEeu0bbUuDw_BUQ" name="GenerateDummyData" visibility="public">
+    <ownedOperation xmi:id="_4wiFAOgxEeu0bbUuDw_BUQ" name="Generate"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_f1agsOgwEeu0bbUuDw_BUQ" name="StringInputParser" visibility="public">
+    <ownedOperation xmi:id="_DLavgOgyEeu0bbUuDw_BUQ" name="Save"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_THdVcOgyEeu0bbUuDw_BUQ" name="Program" visibility="public">
+    <ownedOperation xmi:id="_NBGlwOgzEeu0bbUuDw_BUQ" name="Main"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UgwqsOgyEeu0bbUuDw_BUQ" name="CustomBootstrapper" visibility="public">
+    <ownedOperation xmi:id="_Q5DuwOgzEeu0bbUuDw_BUQ" name="ConfigureApplicationContainer"/>
+    <ownedOperation xmi:id="_RGGFMOgzEeu0bbUuDw_BUQ" name="ApplicationStartup"/>
+    <ownedOperation xmi:id="_RMxU8OgzEeu0bbUuDw_BUQ" name="ConfigureConventions"/>
+    <ownedOperation xmi:id="_RS8OYOgzEeu0bbUuDw_BUQ" name="InternalConfiguration"/>
+    <ownedOperation xmi:id="_RZwBAOgzEeu0bbUuDw_BUQ" name="OnConfigurationBuilder"/>
+    <ownedOperation xmi:id="_Ri9AUOgzEeu0bbUuDw_BUQ" name="AddStaticResourcePath"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UqnxUOgyEeu0bbUuDw_BUQ" name="ModelStock" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U3ER4OgyEeu0bbUuDw_BUQ" name="HTTPResponse" visibility="public">
+    <ownedOperation xmi:id="_pTrqkOgzEeu0bbUuDw_BUQ" name="SetCode"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WA1WUOgyEeu0bbUuDw_BUQ" name="ModelStoreStock" visibility="public"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WXLZwOgyEeu0bbUuDw_BUQ" name="SerializeableStock" visibility="public">
+    <ownedOperation xmi:id="_gSTJoOgzEeu0bbUuDw_BUQ" name="SetStock"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fPp2UOgyEeu0bbUuDw_BUQ" name="SerializeableStoreStock" visibility="public">
+    <ownedOperation xmi:id="_irz-sOgzEeu0bbUuDw_BUQ" name="SetStoreName"/>
+    <ownedOperation xmi:id="_jDwkoOgzEeu0bbUuDw_BUQ" name="SetStoreData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kBM5wOgyEeu0bbUuDw_BUQ" name="IRepository" visibility="public">
+    <ownedOperation xmi:id="_kBM5wegyEeu0bbUuDw_BUQ" name="CreateStoreStock"/>
+    <ownedOperation xmi:id="_qKz8UOgyEeu0bbUuDw_BUQ" name="ReadStoreStock"/>
+    <ownedOperation xmi:id="_qcvZ0OgyEeu0bbUuDw_BUQ" name="ReadStockByType"/>
+    <ownedOperation xmi:id="_qi7hYOgyEeu0bbUuDw_BUQ" name="ReadStockById"/>
+    <ownedOperation xmi:id="_qomEgOgyEeu0bbUuDw_BUQ" name="UpdateStockAmount"/>
+    <ownedOperation xmi:id="_qs1rUOgyEeu0bbUuDw_BUQ" name="DeleteStoreStock"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kBQkIOgyEeu0bbUuDw_BUQ" name="Repository" visibility="public">
+    <interfaceRealization xmi:id="_bFyzEOg0Eeu0bbUuDw_BUQ" client="_kBQkIOgyEeu0bbUuDw_BUQ" supplier="_kBM5wOgyEeu0bbUuDw_BUQ" contract="_kBM5wOgyEeu0bbUuDw_BUQ"/>
+    <ownedOperation xmi:id="_IL-C0OgzEeu0bbUuDw_BUQ" name="UpdateStockAmount"/>
+    <ownedOperation xmi:id="_IL-C0egzEeu0bbUuDw_BUQ" name="DeleteStoreStock"/>
+    <ownedOperation xmi:id="_IL-C0ugzEeu0bbUuDw_BUQ" name="ReadStoreStock"/>
+    <ownedOperation xmi:id="_IL-C0-gzEeu0bbUuDw_BUQ" name="CreateStoreStock"/>
+    <ownedOperation xmi:id="_IL-C1OgzEeu0bbUuDw_BUQ" name="ReadStockByType"/>
+    <ownedOperation xmi:id="_IL-C1egzEeu0bbUuDw_BUQ" name="ReadStockById"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_kBQkIugyEeu0bbUuDw_BUQ" name="Store" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0-6ioOgzEeu0bbUuDw_BUQ" name="MainModule" visibility="public">
+    <ownedOperation xmi:id="_K4oA4Og0Eeu0bbUuDw_BUQ" name="GET[&quot;/&quot;]"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2A7ZQOgzEeu0bbUuDw_BUQ" name="StoreStockModule" visibility="public">
+    <ownedOperation xmi:id="_B75WcOg0Eeu0bbUuDw_BUQ" name="GET[&quot;/store-stock&quot;]"/>
+    <ownedOperation xmi:id="_CB2NcOg0Eeu0bbUuDw_BUQ" name="POST[&quot;/store-stock&quot;]"/>
+    <ownedOperation xmi:id="_CHpTcOg0Eeu0bbUuDw_BUQ" name="PUT[&quot;/store-stock&quot;]"/>
+    <ownedOperation xmi:id="_CMcT4Og0Eeu0bbUuDw_BUQ" name="DELETE[&quot;/store-stock&quot;]"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Jequ4Og1Eeu0bbUuDw_BUQ" client="_f1agsOgwEeu0bbUuDw_BUQ" supplier="_kBM5wOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_J-v9IOg1Eeu0bbUuDw_BUQ" client="_eEumMOgwEeu0bbUuDw_BUQ" supplier="_kBM5wOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_bfda0Og1Eeu0bbUuDw_BUQ" client="_Rv_eIOgwEeu0bbUuDw_BUQ" supplier="_GVyEoOgwEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_mPiSMOg1Eeu0bbUuDw_BUQ" client="_kBQkIOgyEeu0bbUuDw_BUQ" supplier="_Rv_eIOgwEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_m2xRUOg1Eeu0bbUuDw_BUQ" client="_kBQkIOgyEeu0bbUuDw_BUQ" supplier="_GVyEoOgwEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_v_E5oOg1Eeu0bbUuDw_BUQ" client="_THdVcOgyEeu0bbUuDw_BUQ" supplier="_UgwqsOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_7b9XMOg2Eeu0bbUuDw_BUQ" client="_THdVcOgyEeu0bbUuDw_BUQ" supplier="_Rv_eIOgwEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_8izqgOg2Eeu0bbUuDw_BUQ" client="_THdVcOgyEeu0bbUuDw_BUQ" supplier="_GVyEoOgwEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_MbFx0Og3Eeu0bbUuDw_BUQ" client="_2A7ZQOgzEeu0bbUuDw_BUQ" supplier="_U3ER4OgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_NYwT8Og3Eeu0bbUuDw_BUQ" client="_2A7ZQOgzEeu0bbUuDw_BUQ" supplier="_WA1WUOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_NuwZIOg3Eeu0bbUuDw_BUQ" client="_2A7ZQOgzEeu0bbUuDw_BUQ" supplier="_UqnxUOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_OtnOEOg3Eeu0bbUuDw_BUQ" client="_UqnxUOgyEeu0bbUuDw_BUQ" supplier="_WXLZwOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_O9y_IOg3Eeu0bbUuDw_BUQ" client="_WA1WUOgyEeu0bbUuDw_BUQ" supplier="_fPp2UOgyEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_YY2AcOg7Eeu0bbUuDw_BUQ" client="_kBQkIOgyEeu0bbUuDw_BUQ" supplier="_HVRywOgwEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_up0MgOhZEeu0bbUuDw_BUQ" name="Stock" visibility="public">
+    <interfaceRealization xmi:id="_up0MgehZEeu0bbUuDw_BUQ" client="_up0MgOhZEeu0bbUuDw_BUQ _up0MgOhZEeu0bbUuDw_BUQ" supplier="_HVRywOgwEeu0bbUuDw_BUQ" contract="_HVRywOgwEeu0bbUuDw_BUQ"/>
+    <ownedOperation xmi:id="_up0MguhZEeu0bbUuDw_BUQ" name="UpdateStockInformation" isAbstract="true"/>
+    <ownedOperation xmi:id="_up0Mg-hZEeu0bbUuDw_BUQ" name="Amount"/>
+    <ownedOperation xmi:id="_up0MhOhZEeu0bbUuDw_BUQ" name="Discount"/>
+    <ownedOperation xmi:id="_up0MhehZEeu0bbUuDw_BUQ" name="ID"/>
+    <ownedOperation xmi:id="_up0MhuhZEeu0bbUuDw_BUQ" name="Price"/>
+    <ownedOperation xmi:id="_up0zkOhZEeu0bbUuDw_BUQ" name="Size"/>
+    <ownedOperation xmi:id="_up0zkehZEeu0bbUuDw_BUQ" name="SubCategory"/>
+    <ownedOperation xmi:id="_up0zkuhZEeu0bbUuDw_BUQ" name="Category"/>
+    <ownedOperation xmi:id="_up0zk-hZEeu0bbUuDw_BUQ" name="Type"/>
+    <ownedOperation xmi:id="_up0zlOhZEeu0bbUuDw_BUQ" name="UpdateStockAmount"/>
+    <ownedOperation xmi:id="_up0zlehZEeu0bbUuDw_BUQ" name="Title"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_91S4MOhZEeu0bbUuDw_BUQ" client="_NWixoOgwEeu0bbUuDw_BUQ" supplier="_up0MgOhZEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_-VgCQOhZEeu0bbUuDw_BUQ" client="_NeEV8OgwEeu0bbUuDw_BUQ" supplier="_up0MgOhZEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_-oB8sOhZEeu0bbUuDw_BUQ" client="_Nku-oOgwEeu0bbUuDw_BUQ" supplier="_up0MgOhZEeu0bbUuDw_BUQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_IrXp4OhaEeu0bbUuDw_BUQ" client="_up0MgOhZEeu0bbUuDw_BUQ" supplier="_GVyEoOgwEeu0bbUuDw_BUQ"/>
+</uml:Model>

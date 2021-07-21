@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LhZTgOLCEeuhAcAwEjWNNA" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_1DIPUOLEEeuhAcAwEjWNNA" name="Models">
+    <packagedElement xmi:type="uml:Class" xmi:id="_qoVWUOLCEeuhAcAwEjWNNA" name="AirConditioner" visibility="public">
+      <ownedOperation xmi:id="_R2-DkOLEEeuhAcAwEjWNNA" name="On"/>
+      <ownedOperation xmi:id="_SHl5gOLEEeuhAcAwEjWNNA" name="Off"/>
+      <ownedOperation xmi:id="_SVrY0OLEEeuhAcAwEjWNNA" name="SetTemperature"/>
+      <ownedOperation xmi:id="_SkWuAOLEEeuhAcAwEjWNNA" name="Status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_sF6uoOLCEeuhAcAwEjWNNA" name="Fan" visibility="public">
+      <ownedOperation xmi:id="_ePCzgOLEEeuhAcAwEjWNNA" name="High"/>
+      <ownedOperation xmi:id="_eh4P8OLEEeuhAcAwEjWNNA" name="Medium"/>
+      <ownedOperation xmi:id="_ewKjkOLEEeuhAcAwEjWNNA" name="Low"/>
+      <ownedOperation xmi:id="_e-wZMOLEEeuhAcAwEjWNNA" name="Off"/>
+      <ownedOperation xmi:id="_fRiLQOLEEeuhAcAwEjWNNA" name="Status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ukg4AOLCEeuhAcAwEjWNNA" name="Television" visibility="public">
+      <ownedOperation xmi:id="_XtiOUuLEEeuhAcAwEjWNNA" name="On"/>
+      <ownedOperation xmi:id="_XtiOUOLEEeuhAcAwEjWNNA" name="Off"/>
+      <ownedOperation xmi:id="_mnVUIOLEEeuhAcAwEjWNNA" name="SetInputChannel"/>
+      <ownedOperation xmi:id="_m3geIOLEEeuhAcAwEjWNNA" name="SetVolume"/>
+      <ownedOperation xmi:id="_XtiOUeLEEeuhAcAwEjWNNA" name="Status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tjPBMOLCEeuhAcAwEjWNNA" name="Light" visibility="public">
+      <ownedOperation xmi:id="_XPY5weLEEeuhAcAwEjWNNA" name="On"/>
+      <ownedOperation xmi:id="_XPYSsOLEEeuhAcAwEjWNNA" name="Off"/>
+      <ownedOperation xmi:id="_XPY5wOLEEeuhAcAwEjWNNA" name="Status"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_47_XQOLEEeuhAcAwEjWNNA" name="RemoteControl">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_RvAsUOLCEeuhAcAwEjWNNA" name="IRemoteControl" visibility="public">
+      <ownedOperation xmi:id="_VCsqoOLCEeuhAcAwEjWNNA" name="SetCommand"/>
+      <ownedOperation xmi:id="_Xm00QOLCEeuhAcAwEjWNNA" name="OnButtonPushed"/>
+      <ownedOperation xmi:id="_X5-ZwOLCEeuhAcAwEjWNNA" name="OffButtonPushed"/>
+      <ownedOperation xmi:id="_YLu4IOLCEeuhAcAwEjWNNA" name="UndoButtonPushed"/>
+      <ownedOperation xmi:id="_YugOAOLCEeuhAcAwEjWNNA" name="ViewRemoteCondition"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-xUd0OLCEeuhAcAwEjWNNA" name="RemoteControl" visibility="public">
+      <interfaceRealization xmi:id="_NsULkOLFEeuhAcAwEjWNNA" client="_-xUd0OLCEeuhAcAwEjWNNA" supplier="_RvAsUOLCEeuhAcAwEjWNNA" contract="_RvAsUOLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_AbF4AOLDEeuhAcAwEjWNNA" name="OffButtonPushed"/>
+      <ownedOperation xmi:id="_AbF4AeLDEeuhAcAwEjWNNA" name="ViewRemoteCondition"/>
+      <ownedOperation xmi:id="_AbF4AuLDEeuhAcAwEjWNNA" name="OnButtonPushed"/>
+      <ownedOperation xmi:id="_AbF4A-LDEeuhAcAwEjWNNA" name="UndoButtonPushed"/>
+      <ownedOperation xmi:id="_AbF4BOLDEeuhAcAwEjWNNA" name="SetCommand"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_-5PY0OLEEeuhAcAwEjWNNA" name="Command">
+    <packagedElement xmi:type="uml:Class" xmi:id="_l4E24OLDEeuhAcAwEjWNNA" name="LightOnCommand" visibility="public">
+      <interfaceRealization xmi:id="_K3vyMOLFEeuhAcAwEjWNNA" client="_l4E24OLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_l4E24eLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_l4E24uLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YZ6BkOLDEeuhAcAwEjWNNA" name="FanOnHighCommand" visibility="public">
+      <interfaceRealization xmi:id="_Jd970OLFEeuhAcAwEjWNNA" client="_YZ6BkOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_YZ6BkeLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_YZ6BkuLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kiSIoOLDEeuhAcAwEjWNNA" name="TelevisionOnCommand" visibility="public">
+      <interfaceRealization xmi:id="_LpeKEOLFEeuhAcAwEjWNNA" client="_kiSIoOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_kiSIoeLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_kiSIouLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_QRZe0OLCEeuhAcAwEjWNNA" name="ICommand" visibility="public">
+      <ownedOperation xmi:id="_h2-1cOLCEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_iH8CkOLCEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QxthIOLDEeuhAcAwEjWNNA" name="MacroCommand" visibility="public">
+      <interfaceRealization xmi:id="_Hgb4IOLFEeuhAcAwEjWNNA" client="_QxthIOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_WSg3QOLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_WSg3QeLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mVfysOLDEeuhAcAwEjWNNA" name="TelevisionOffCommand" visibility="public">
+      <interfaceRealization xmi:id="_MBPJ0OLFEeuhAcAwEjWNNA" client="_mVfysOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_mVfyseLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_mVfysuLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YOLSsOLDEeuhAcAwEjWNNA" name="AirConditionerOffCommand" visibility="public">
+      <interfaceRealization xmi:id="_JDsaoOLFEeuhAcAwEjWNNA" client="_YOLSsOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_YOL5wOLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_YOL5weLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mFrOAOLDEeuhAcAwEjWNNA" name="LightOffCommand" visibility="public">
+      <interfaceRealization xmi:id="_LO2qoOLFEeuhAcAwEjWNNA" client="_mFrOAOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_mFrOAeLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_mFrOAuLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q9susOLDEeuhAcAwEjWNNA" name="NoCommand" visibility="public">
+      <interfaceRealization xmi:id="_IH7V8OLFEeuhAcAwEjWNNA" client="_Q9susOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_WZawgOLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_WZawgeLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hZZFEOLDEeuhAcAwEjWNNA" name="FanOffCommand" visibility="public">
+      <interfaceRealization xmi:id="_KafOcOLFEeuhAcAwEjWNNA" client="_hZZFEOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_hZZFEeLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_hZZFEuLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Yk6-wOLDEeuhAcAwEjWNNA" name="FanOnMediumCommand" visibility="public">
+      <ownedOperation xmi:id="_Yk6-weLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_Yk6-wuLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YAKE0OLDEeuhAcAwEjWNNA" name="AirConditionerOnCommand" visibility="public">
+      <interfaceRealization xmi:id="_IqLucOLFEeuhAcAwEjWNNA" client="_YAKE0OLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_YAKE0eLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_YAKE0uLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YvqPIOLDEeuhAcAwEjWNNA" name="FanOnLowCommand" visibility="public">
+      <interfaceRealization xmi:id="_KBNLwOLFEeuhAcAwEjWNNA" client="_YvqPIOLDEeuhAcAwEjWNNA" supplier="_QRZe0OLCEeuhAcAwEjWNNA" contract="_QRZe0OLCEeuhAcAwEjWNNA"/>
+      <ownedOperation xmi:id="_YvqPIeLDEeuhAcAwEjWNNA" name="Excecute"/>
+      <ownedOperation xmi:id="_YvqPIuLDEeuhAcAwEjWNNA" name="Undo"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_7WPUcON6Eeu_QdxqyjJirg" name="IChef" visibility="public">
+    <ownedOperation xmi:id="_oRWRwON7Eeu_QdxqyjJirg" name="Cooking"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_9qXTMON6Eeu_QdxqyjJirg" name="ICookMenu" visibility="public">
+    <ownedOperation xmi:id="_q-bjEON7Eeu_QdxqyjJirg" name="Execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="__Wp14ON6Eeu_QdxqyjJirg" name="ICustomer" visibility="public">
+    <ownedOperation xmi:id="_tLP_8ON7Eeu_QdxqyjJirg" name="CreateOrder"/>
+    <ownedOperation xmi:id="_tyj3kON7Eeu_QdxqyjJirg" name="OrderList"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_AzK3MON7Eeu_QdxqyjJirg" name="IIngredients" visibility="public">
+    <ownedOperation xmi:id="_-LM58ON7Eeu_QdxqyjJirg" name="Bread"/>
+    <ownedOperation xmi:id="_-3CFMON7Eeu_QdxqyjJirg" name="Meat"/>
+    <ownedOperation xmi:id="__Q3hgON7Eeu_QdxqyjJirg" name="Cheese"/>
+    <ownedOperation xmi:id="__Xr7MON7Eeu_QdxqyjJirg" name="Lettuce"/>
+    <ownedOperation xmi:id="__du40ON7Eeu_QdxqyjJirg" name="Mayonaise"/>
+    <ownedOperation xmi:id="__h_twON7Eeu_QdxqyjJirg" name="Onion"/>
+    <ownedOperation xmi:id="__ltJEON7Eeu_QdxqyjJirg" name="Sauce"/>
+    <ownedOperation xmi:id="__oFusON7Eeu_QdxqyjJirg" name="Tomato"/>
+    <ownedOperation xmi:id="__qe7YON7Eeu_QdxqyjJirg" name="ChickenMeat"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_CPAjEON7Eeu_QdxqyjJirg" name="IMenu" visibility="public">
+    <ownedOperation xmi:id="_VoFbION8Eeu_QdxqyjJirg" name="MenuName"/>
+    <ownedOperation xmi:id="_Vv23EON8Eeu_QdxqyjJirg" name="CustomerName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DXDwQON7Eeu_QdxqyjJirg" name="IWaitress" visibility="public">
+    <ownedOperation xmi:id="_QOe5MON8Eeu_QdxqyjJirg" name="PickUpOrder"/>
+    <ownedOperation xmi:id="_QkGj4ON8Eeu_QdxqyjJirg" name="OrderUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HmK1AON7Eeu_QdxqyjJirg" name="Chef" visibility="public">
+    <interfaceRealization xmi:id="_mh4p0ON8Eeu_QdxqyjJirg" client="_HmK1AON7Eeu_QdxqyjJirg" supplier="_7WPUcON6Eeu_QdxqyjJirg" contract="_7WPUcON6Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_NSC9QON8Eeu_QdxqyjJirg" name="Cooking"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JQY7ION7Eeu_QdxqyjJirg" name="Customer" visibility="public">
+    <interfaceRealization xmi:id="_mFaJMON8Eeu_QdxqyjJirg" client="_JQY7ION7Eeu_QdxqyjJirg" supplier="__Wp14ON6Eeu_QdxqyjJirg" contract="__Wp14ON6Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_M6A3wON8Eeu_QdxqyjJirg" name="CreateOrder"/>
+    <ownedOperation xmi:id="_M6A3weN8Eeu_QdxqyjJirg" name="OrderList"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Krx7EON7Eeu_QdxqyjJirg" name="Waitress" visibility="public">
+    <interfaceRealization xmi:id="_klxicON8Eeu_QdxqyjJirg" client="_Krx7EON7Eeu_QdxqyjJirg" supplier="_DXDwQON7Eeu_QdxqyjJirg" contract="_DXDwQON7Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_TPVbEON8Eeu_QdxqyjJirg" name="PickUpOrder"/>
+    <ownedOperation xmi:id="_TPVbEeN8Eeu_QdxqyjJirg" name="OrderUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M6wUEON7Eeu_QdxqyjJirg" name="Ingredients" visibility="public">
+    <interfaceRealization xmi:id="_livhAON8Eeu_QdxqyjJirg" client="_M6wUEON7Eeu_QdxqyjJirg" supplier="_AzK3MON7Eeu_QdxqyjJirg" contract="_AzK3MON7Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_L3Dl8ON8Eeu_QdxqyjJirg" name="Tomato"/>
+    <ownedOperation xmi:id="_L3Dl8eN8Eeu_QdxqyjJirg" name="Bread"/>
+    <ownedOperation xmi:id="_L3Dl8uN8Eeu_QdxqyjJirg" name="Cheese"/>
+    <ownedOperation xmi:id="_L3Dl8-N8Eeu_QdxqyjJirg" name="ChickenMeat"/>
+    <ownedOperation xmi:id="_L3Dl9ON8Eeu_QdxqyjJirg" name="Meat"/>
+    <ownedOperation xmi:id="_L3Dl9eN8Eeu_QdxqyjJirg" name="Sauce"/>
+    <ownedOperation xmi:id="_L3Dl9uN8Eeu_QdxqyjJirg" name="Mayonaise"/>
+    <ownedOperation xmi:id="_L3Dl9-N8Eeu_QdxqyjJirg" name="Lettuce"/>
+    <ownedOperation xmi:id="_L3Dl-ON8Eeu_QdxqyjJirg" name="Onion"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UwF4oON7Eeu_QdxqyjJirg" name="BigMac" visibility="public">
+    <interfaceRealization xmi:id="_pIQ2MON8Eeu_QdxqyjJirg" client="_UwF4oON7Eeu_QdxqyjJirg" supplier="_CPAjEON7Eeu_QdxqyjJirg" contract="_CPAjEON7Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_Ylm8MON8Eeu_QdxqyjJirg" name="CustomerName"/>
+    <ownedOperation xmi:id="_Ylm8MeN8Eeu_QdxqyjJirg" name="MenuName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WSJhQON7Eeu_QdxqyjJirg" name="CheeseBurger" visibility="public">
+    <interfaceRealization xmi:id="_pf1osON8Eeu_QdxqyjJirg" client="_WSJhQON7Eeu_QdxqyjJirg" supplier="_CPAjEON7Eeu_QdxqyjJirg" contract="_CPAjEON7Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_YqxJAON8Eeu_QdxqyjJirg" name="CustomerName"/>
+    <ownedOperation xmi:id="_YqxJAeN8Eeu_QdxqyjJirg" name="MenuName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Xe6PUON7Eeu_QdxqyjJirg" name="ChickenBurger" visibility="public">
+    <interfaceRealization xmi:id="_p37YkON8Eeu_QdxqyjJirg" client="_Xe6PUON7Eeu_QdxqyjJirg" supplier="_CPAjEON7Eeu_QdxqyjJirg" contract="_CPAjEON7Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_YxNIMON8Eeu_QdxqyjJirg" name="CustomerName"/>
+    <ownedOperation xmi:id="_YxNIMeN8Eeu_QdxqyjJirg" name="MenuName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YuiEION7Eeu_QdxqyjJirg" name="McDouble" visibility="public">
+    <interfaceRealization xmi:id="_qRTh4ON8Eeu_QdxqyjJirg" client="_YuiEION7Eeu_QdxqyjJirg" supplier="_CPAjEON7Eeu_QdxqyjJirg" contract="_CPAjEON7Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_Y2a_YON8Eeu_QdxqyjJirg" name="CustomerName"/>
+    <ownedOperation xmi:id="_Y2a_YeN8Eeu_QdxqyjJirg" name="MenuName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dT_zYON7Eeu_QdxqyjJirg" name="MakeBigMac" visibility="public">
+    <interfaceRealization xmi:id="_nfe6gON8Eeu_QdxqyjJirg" client="_dT_zYON7Eeu_QdxqyjJirg" supplier="_9qXTMON6Eeu_QdxqyjJirg" contract="_9qXTMON6Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_NxpqYON8Eeu_QdxqyjJirg" name="Execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dUBokON7Eeu_QdxqyjJirg" name="MakeChickenBurger" visibility="public">
+    <interfaceRealization xmi:id="_n4qPgON8Eeu_QdxqyjJirg" client="_dUBokON7Eeu_QdxqyjJirg" supplier="_9qXTMON6Eeu_QdxqyjJirg" contract="_9qXTMON6Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_N3mhYON8Eeu_QdxqyjJirg" name="Execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dUEE0ON7Eeu_QdxqyjJirg" name="MakeCheeseBurger" visibility="public">
+    <interfaceRealization xmi:id="_oPqaQON8Eeu_QdxqyjJirg" client="_dUEE0ON7Eeu_QdxqyjJirg" supplier="_9qXTMON6Eeu_QdxqyjJirg" contract="_9qXTMON6Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_N9_dQON8Eeu_QdxqyjJirg" name="Execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dUF6AON7Eeu_QdxqyjJirg" name="MakeMcDouble" visibility="public">
+    <interfaceRealization xmi:id="_onGp4ON8Eeu_QdxqyjJirg" client="_dUF6AON7Eeu_QdxqyjJirg" supplier="_9qXTMON6Eeu_QdxqyjJirg" contract="_9qXTMON6Eeu_QdxqyjJirg"/>
+    <ownedOperation xmi:id="_OE4vcON8Eeu_QdxqyjJirg" name="Execute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ArvuoON9Eeu_QdxqyjJirg" client="_AzK3MON7Eeu_QdxqyjJirg" supplier="_CPAjEON7Eeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_B5QDkON9Eeu_QdxqyjJirg" client="_CPAjEON7Eeu_QdxqyjJirg" supplier="__Wp14ON6Eeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_CRyfYON9Eeu_QdxqyjJirg" client="__Wp14ON6Eeu_QdxqyjJirg" supplier="_DXDwQON7Eeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DHuB0ON9Eeu_QdxqyjJirg" client="_DXDwQON7Eeu_QdxqyjJirg" supplier="_7WPUcON6Eeu_QdxqyjJirg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Dpi8gON9Eeu_QdxqyjJirg" client="_7WPUcON6Eeu_QdxqyjJirg" supplier="_9qXTMON6Eeu_QdxqyjJirg"/>
+</uml:Model>

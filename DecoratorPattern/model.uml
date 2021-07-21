@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zAUakN1UEeu8oYgVACX7Pw" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_C1QS8N1VEeu8oYgVACX7Pw" name="PizzaStandard" visibility="public">
+    <generalization xmi:id="_nPWRcN1VEeu8oYgVACX7Pw"/>
+    <generalization xmi:id="_Jp6wwN1tEeu8oYgVACX7Pw" general="_CVXlEN1tEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_omFlcN1WEeu8oYgVACX7Pw" name="GetDescription"/>
+    <ownedOperation xmi:id="_o73BIN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_VdpJkN2FEeu8oYgVACX7Pw" name="GetSize"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EWCwQN1VEeu8oYgVACX7Pw" name="PizzaExclusive" visibility="public">
+    <generalization xmi:id="_pGbu4N1VEeu8oYgVACX7Pw"/>
+    <generalization xmi:id="_JMSZkN1tEeu8oYgVACX7Pw" general="_CVXlEN1tEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_upJUEN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_upJUEd1WEeu8oYgVACX7Pw" name="GetDescription"/>
+    <ownedOperation xmi:id="_VlXiMN2FEeu8oYgVACX7Pw" name="GetSize"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HBOkIN1VEeu8oYgVACX7Pw" name="ToppingDecorator" visibility="public" isAbstract="true">
+    <generalization xmi:id="_p3W1gN1VEeu8oYgVACX7Pw"/>
+    <generalization xmi:id="_F_ftcN1tEeu8oYgVACX7Pw" general="_CVXlEN1tEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_xHGkQd1WEeu8oYgVACX7Pw" name="GetDescription" isAbstract="true"/>
+    <ownedOperation xmi:id="_lF4CsN2FEeu8oYgVACX7Pw" name="GetSize" isAbstract="true"/>
+    <ownedOperation xmi:id="_lF4Csd2FEeu8oYgVACX7Pw" name="GetPrice" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LniA4N1VEeu8oYgVACX7Pw" name="Basil" visibility="public">
+    <generalization xmi:id="_tzSfkN1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_vKg7wN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_vKg7wd1WEeu8oYgVACX7Pw" name="GetDescription"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M3yu4N1VEeu8oYgVACX7Pw" name="Mozarella" visibility="public">
+    <generalization xmi:id="_uqsBoN1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_vRLkcN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_vRLkcd1WEeu8oYgVACX7Pw" name="GetDescription"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O7K74N1VEeu8oYgVACX7Pw" name="OliveOil" visibility="public">
+    <generalization xmi:id="_vajYUN1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_vZS-oN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_vZS-od1WEeu8oYgVACX7Pw" name="GetDescription"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RDJ8EN1VEeu8oYgVACX7Pw" name="Oregano" visibility="public">
+    <generalization xmi:id="_wIGa0N1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_vgxfoN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_vgxfod1WEeu8oYgVACX7Pw" name="GetDescription"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TOOFcN1VEeu8oYgVACX7Pw" name="Pecorino" visibility="public">
+    <generalization xmi:id="_wcldEN1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_voQAoN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_voQAod1WEeu8oYgVACX7Pw" name="GetDescription"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VIPiIN1VEeu8oYgVACX7Pw" name="Pepperoni" visibility="public">
+    <generalization xmi:id="_xFAH8N1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_vvLvEN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_vvLvEd1WEeu8oYgVACX7Pw" name="GetDescription"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WuiKgN1VEeu8oYgVACX7Pw" name="Sauce" visibility="public">
+    <generalization xmi:id="_xZUyIN1VEeu8oYgVACX7Pw" general="_HBOkIN1VEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_v2TqwN1WEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_v2Tqwd1WEeu8oYgVACX7Pw" name="GetDescription"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_dqzZEN1VEeu8oYgVACX7Pw" name="PizzaStandard" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_CVXlEN1tEeu8oYgVACX7Pw" name="IPizza" visibility="public">
+    <ownedOperation xmi:id="_FQpDYN1tEeu8oYgVACX7Pw" name="GetDescription"/>
+    <ownedOperation xmi:id="_FQpDYd1tEeu8oYgVACX7Pw" name="GetPrice"/>
+    <ownedOperation xmi:id="_UAt4kN2FEeu8oYgVACX7Pw" name="GetSize"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J9nb8N2FEeu8oYgVACX7Pw" name="SingleSize" visibility="public">
+    <generalization xmi:id="_wK7EgN2FEeu8oYgVACX7Pw" general="_J90QQN2FEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_J9nb892FEeu8oYgVACX7Pw" name="GetDescription"/>
+    <ownedOperation xmi:id="_XJF-wN2FEeu8oYgVACX7Pw" name="GetSize"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J9wl4N2FEeu8oYgVACX7Pw" name="DoubleSize" visibility="public">
+    <generalization xmi:id="_viUMYN2FEeu8oYgVACX7Pw" general="_J90QQN2FEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_J9wl492FEeu8oYgVACX7Pw" name="GetDescription"/>
+    <ownedOperation xmi:id="_XRPOIN2FEeu8oYgVACX7Pw" name="GetSize"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_J90QQN2FEeu8oYgVACX7Pw" name="SizeDecorator" visibility="public" isAbstract="true">
+    <generalization xmi:id="_J90QQd2FEeu8oYgVACX7Pw"/>
+    <generalization xmi:id="_J90QQt2FEeu8oYgVACX7Pw" general="_CVXlEN1tEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_J90QQ92FEeu8oYgVACX7Pw" name="GetDescription" isAbstract="true"/>
+    <ownedOperation xmi:id="_jGMp8N2FEeu8oYgVACX7Pw" name="GetPrice" isAbstract="true"/>
+    <ownedOperation xmi:id="_ko82IN2FEeu8oYgVACX7Pw" name="GetSize" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QeKX0N2FEeu8oYgVACX7Pw" name="FamilySize" visibility="public">
+    <generalization xmi:id="_uY5tQN2FEeu8oYgVACX7Pw" general="_J90QQN2FEeu8oYgVACX7Pw"/>
+    <ownedOperation xmi:id="_QeKX0t2FEeu8oYgVACX7Pw" name="GetDescription"/>
+    <ownedOperation xmi:id="_Xh4SMN2FEeu8oYgVACX7Pw" name="GetSize"/>
+  </packagedElement>
+</uml:Model>
